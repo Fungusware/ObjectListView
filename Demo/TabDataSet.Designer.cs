@@ -46,23 +46,24 @@
             this.label8 = new System.Windows.Forms.Label();
             this.comboBoxView = new System.Windows.Forms.ComboBox();
             this.olvData = new BrightIdeasSoftware.DataListView();
-            this.olvColumn1 = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
+            this.olvColumn1 = new BrightIdeasSoftware.OLVColumn();
             this.highlightTextRenderer1 = new BrightIdeasSoftware.HighlightTextRenderer();
-            this.olvColumn2 = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
-            this.olvColumn3 = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
-            this.salaryColumn = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
-            this.heightColumn = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
+            this.olvColumn2 = new BrightIdeasSoftware.OLVColumn();
+            this.olvColumn3 = new BrightIdeasSoftware.OLVColumn();
+            this.salaryColumn = new BrightIdeasSoftware.OLVColumn();
+            this.salaryRenderer = new BrightIdeasSoftware.MultiImageRenderer();
+            this.heightColumn = new BrightIdeasSoftware.OLVColumn();
             this.heightRenderer = new BrightIdeasSoftware.BarRenderer();
-            this.olvColumn42 = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
-            this.olvColumnGif = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
+            this.olvColumn42 = new BrightIdeasSoftware.OLVColumn();
+            this.olvColumnGif = new BrightIdeasSoftware.OLVColumn();
             this.animatedGifRenderer = new BrightIdeasSoftware.ImageRenderer();
-            this.olvColumnFiller = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
+            this.olvColumnFiller = new BrightIdeasSoftware.OLVColumn();
             this.imageListLarge = new System.Windows.Forms.ImageList(this.components);
             this.imageListSmall = new System.Windows.Forms.ImageList(this.components);
             this.checkBoxGroups = new System.Windows.Forms.CheckBox();
             this.checkBoxItemCounts = new System.Windows.Forms.CheckBox();
-            this.salaryRenderer = new BrightIdeasSoftware.MultiImageRenderer();
             this.groupBox13.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
@@ -77,18 +78,21 @@
             // 
             this.groupBox13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox13.Controls.Add(this.textBoxFilterData);
-            this.groupBox13.Location = new System.Drawing.Point(685, 4);
+            this.groupBox13.Location = new System.Drawing.Point(799, 5);
+            this.groupBox13.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupBox13.Name = "groupBox13";
-            this.groupBox13.Size = new System.Drawing.Size(117, 44);
+            this.groupBox13.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.groupBox13.Size = new System.Drawing.Size(136, 51);
             this.groupBox13.TabIndex = 20;
             this.groupBox13.TabStop = false;
             this.groupBox13.Text = "Filter";
             // 
             // textBoxFilterData
             // 
-            this.textBoxFilterData.Location = new System.Drawing.Point(7, 20);
+            this.textBoxFilterData.Location = new System.Drawing.Point(8, 23);
+            this.textBoxFilterData.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBoxFilterData.Name = "textBoxFilterData";
-            this.textBoxFilterData.Size = new System.Drawing.Size(100, 20);
+            this.textBoxFilterData.Size = new System.Drawing.Size(116, 23);
             this.textBoxFilterData.TabIndex = 0;
             this.textBoxFilterData.TextChanged += new System.EventHandler(this.textBoxFilterData_TextChanged);
             // 
@@ -98,9 +102,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label3.Location = new System.Drawing.Point(1, 4);
+            this.label3.Location = new System.Drawing.Point(1, 5);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(676, 46);
+            this.label3.Size = new System.Drawing.Size(788, 53);
             this.label3.TabIndex = 19;
             this.label3.Text = resources.GetString("label3.Text");
             // 
@@ -109,7 +114,8 @@
             this.splitContainer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.splitContainer1.Location = new System.Drawing.Point(1, 53);
+            this.splitContainer1.Location = new System.Drawing.Point(1, 61);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.splitContainer1.Name = "splitContainer1";
             this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -120,8 +126,9 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.groupBox3);
-            this.splitContainer1.Size = new System.Drawing.Size(810, 450);
-            this.splitContainer1.SplitterDistance = 154;
+            this.splitContainer1.Size = new System.Drawing.Size(945, 519);
+            this.splitContainer1.SplitterDistance = 177;
+            this.splitContainer1.SplitterWidth = 5;
             this.splitContainer1.TabIndex = 21;
             // 
             // groupBox1
@@ -131,9 +138,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.Controls.Add(this.dataGridView1);
             this.groupBox1.Controls.Add(this.buttonResetData);
-            this.groupBox1.Location = new System.Drawing.Point(6, 1);
+            this.groupBox1.Location = new System.Drawing.Point(7, 1);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(799, 152);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.groupBox1.Size = new System.Drawing.Size(932, 174);
             this.groupBox1.TabIndex = 14;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Source Data Table";
@@ -144,18 +153,20 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 19);
+            this.dataGridView1.Location = new System.Drawing.Point(7, 22);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-            this.dataGridView1.Size = new System.Drawing.Size(670, 127);
+            this.dataGridView1.Size = new System.Drawing.Size(782, 146);
             this.dataGridView1.TabIndex = 0;
             // 
             // buttonResetData
             // 
             this.buttonResetData.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonResetData.Location = new System.Drawing.Point(689, 19);
+            this.buttonResetData.Location = new System.Drawing.Point(804, 22);
+            this.buttonResetData.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.buttonResetData.Name = "buttonResetData";
-            this.buttonResetData.Size = new System.Drawing.Size(104, 23);
+            this.buttonResetData.Size = new System.Drawing.Size(121, 27);
             this.buttonResetData.TabIndex = 1;
             this.buttonResetData.Text = "&Reset Data";
             this.buttonResetData.UseVisualStyleBackColor = true;
@@ -176,9 +187,11 @@
             this.groupBox3.Controls.Add(this.olvData);
             this.groupBox3.Controls.Add(this.checkBoxGroups);
             this.groupBox3.Controls.Add(this.checkBoxItemCounts);
-            this.groupBox3.Location = new System.Drawing.Point(6, 4);
+            this.groupBox3.Location = new System.Drawing.Point(7, 5);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(799, 284);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.groupBox3.Size = new System.Drawing.Size(932, 328);
             this.groupBox3.TabIndex = 16;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Data List View";
@@ -187,9 +200,10 @@
             // 
             this.label22.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(689, 131);
+            this.label22.Location = new System.Drawing.Point(804, 151);
+            this.label22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(48, 13);
+            this.label22.Size = new System.Drawing.Size(52, 15);
             this.label22.TabIndex = 7;
             this.label22.Text = "&Editable:";
             // 
@@ -203,9 +217,10 @@
             "Single Click",
             "Double Click",
             "F2 Only"});
-            this.comboBoxEditable.Location = new System.Drawing.Point(689, 146);
+            this.comboBoxEditable.Location = new System.Drawing.Point(804, 168);
+            this.comboBoxEditable.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.comboBoxEditable.Name = "comboBoxEditable";
-            this.comboBoxEditable.Size = new System.Drawing.Size(104, 21);
+            this.comboBoxEditable.Size = new System.Drawing.Size(121, 23);
             this.comboBoxEditable.TabIndex = 8;
             this.comboBoxEditable.SelectedIndexChanged += new System.EventHandler(this.comboBoxEditable_SelectedIndexChanged);
             // 
@@ -214,9 +229,10 @@
             this.checkBoxPause.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.checkBoxPause.Checked = true;
             this.checkBoxPause.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBoxPause.Location = new System.Drawing.Point(689, 63);
+            this.checkBoxPause.Location = new System.Drawing.Point(804, 73);
+            this.checkBoxPause.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.checkBoxPause.Name = "checkBoxPause";
-            this.checkBoxPause.Size = new System.Drawing.Size(113, 19);
+            this.checkBoxPause.Size = new System.Drawing.Size(132, 22);
             this.checkBoxPause.TabIndex = 4;
             this.checkBoxPause.Text = "Pause &Animations";
             this.checkBoxPause.UseVisualStyleBackColor = true;
@@ -225,7 +241,8 @@
             // rowHeightUpDown
             // 
             this.rowHeightUpDown.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.rowHeightUpDown.Location = new System.Drawing.Point(689, 187);
+            this.rowHeightUpDown.Location = new System.Drawing.Point(804, 216);
+            this.rowHeightUpDown.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.rowHeightUpDown.Maximum = new decimal(new int[] {
             128,
             0,
@@ -237,7 +254,7 @@
             0,
             -2147483648});
             this.rowHeightUpDown.Name = "rowHeightUpDown";
-            this.rowHeightUpDown.Size = new System.Drawing.Size(101, 20);
+            this.rowHeightUpDown.Size = new System.Drawing.Size(118, 23);
             this.rowHeightUpDown.TabIndex = 10;
             this.rowHeightUpDown.Value = new decimal(new int[] {
             16,
@@ -250,9 +267,10 @@
             // 
             this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(689, 172);
+            this.label11.Location = new System.Drawing.Point(804, 198);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(66, 13);
+            this.label11.Size = new System.Drawing.Size(72, 15);
             this.label11.TabIndex = 9;
             this.label11.Text = "Row &Height:";
             // 
@@ -260,9 +278,10 @@
             // 
             this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(689, 89);
+            this.label8.Location = new System.Drawing.Point(804, 103);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(33, 13);
+            this.label8.Size = new System.Drawing.Size(35, 15);
             this.label8.TabIndex = 5;
             this.label8.Text = "&View:";
             // 
@@ -277,9 +296,10 @@
             "List",
             "Tile",
             "Details"});
-            this.comboBoxView.Location = new System.Drawing.Point(689, 104);
+            this.comboBoxView.Location = new System.Drawing.Point(804, 120);
+            this.comboBoxView.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.comboBoxView.Name = "comboBoxView";
-            this.comboBoxView.Size = new System.Drawing.Size(104, 21);
+            this.comboBoxView.Size = new System.Drawing.Size(121, 23);
             this.comboBoxView.TabIndex = 6;
             this.comboBoxView.SelectedIndexChanged += new System.EventHandler(this.comboBoxView_SelectedIndexChanged);
             // 
@@ -309,26 +329,25 @@
             this.olvColumn42,
             this.olvColumnGif,
             this.olvColumnFiller});
-            this.olvData.Cursor = System.Windows.Forms.Cursors.Default;
             this.olvData.DataSource = null;
             this.olvData.EmptyListMsg = "Add rows to the above table to see them here";
-            this.olvData.EmptyListMsgFont = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.olvData.EmptyListMsgFont = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.olvData.FullRowSelect = true;
             this.olvData.GridLines = true;
             this.olvData.GroupWithItemCountFormat = "{0} ({1} people)";
             this.olvData.GroupWithItemCountSingularFormat = "{0} (1 person)";
-            this.olvData.HideSelection = false;
-            this.olvData.SelectedBackColor = System.Drawing.Color.Pink;
-            this.olvData.SelectedForeColor = System.Drawing.Color.MidnightBlue;
             this.olvData.LargeImageList = this.imageListLarge;
-            this.olvData.Location = new System.Drawing.Point(6, 19);
+            this.olvData.Location = new System.Drawing.Point(7, 22);
+            this.olvData.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.olvData.Name = "olvData";
             this.olvData.SelectColumnsOnRightClickBehaviour = BrightIdeasSoftware.ObjectListView.ColumnSelectBehaviour.Submenu;
+            this.olvData.SelectedBackColor = System.Drawing.Color.Pink;
+            this.olvData.SelectedForeColor = System.Drawing.Color.MidnightBlue;
             this.olvData.ShowCommandMenuOnRightClick = true;
             this.olvData.ShowGroups = false;
             this.olvData.ShowImagesOnSubItems = true;
             this.olvData.ShowItemToolTips = true;
-            this.olvData.Size = new System.Drawing.Size(677, 259);
+            this.olvData.Size = new System.Drawing.Size(789, 298);
             this.olvData.SmallImageList = this.imageListSmall;
             this.olvData.TabIndex = 0;
             this.olvData.UseCellFormatEvents = true;
@@ -384,6 +403,13 @@
             this.salaryColumn.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.salaryColumn.Width = 95;
             // 
+            // salaryRenderer
+            // 
+            this.salaryRenderer.ImageName = "star";
+            this.salaryRenderer.MaximumValue = 500000;
+            this.salaryRenderer.MaxNumberImages = 5;
+            this.salaryRenderer.MinimumValue = 10000;
+            // 
             // heightColumn
             // 
             this.heightColumn.AspectName = "Height";
@@ -438,6 +464,7 @@
             // 
             // imageListLarge
             // 
+            this.imageListLarge.ColorDepth = System.Windows.Forms.ColorDepth.Depth32Bit;
             this.imageListLarge.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageListLarge.ImageStream")));
             this.imageListLarge.TransparentColor = System.Drawing.Color.Transparent;
             this.imageListLarge.Images.SetKeyName(0, "user");
@@ -461,6 +488,7 @@
             // 
             // imageListSmall
             // 
+            this.imageListSmall.ColorDepth = System.Windows.Forms.ColorDepth.Depth32Bit;
             this.imageListSmall.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageListSmall.ImageStream")));
             this.imageListSmall.TransparentColor = System.Drawing.Color.Transparent;
             this.imageListSmall.Images.SetKeyName(0, "compass");
@@ -485,9 +513,10 @@
             // checkBoxGroups
             // 
             this.checkBoxGroups.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.checkBoxGroups.Location = new System.Drawing.Point(689, 18);
+            this.checkBoxGroups.Location = new System.Drawing.Point(804, 21);
+            this.checkBoxGroups.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.checkBoxGroups.Name = "checkBoxGroups";
-            this.checkBoxGroups.Size = new System.Drawing.Size(104, 20);
+            this.checkBoxGroups.Size = new System.Drawing.Size(121, 23);
             this.checkBoxGroups.TabIndex = 1;
             this.checkBoxGroups.Text = "Show &Groups";
             this.checkBoxGroups.UseVisualStyleBackColor = true;
@@ -496,34 +525,30 @@
             // checkBoxItemCounts
             // 
             this.checkBoxItemCounts.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.checkBoxItemCounts.Location = new System.Drawing.Point(689, 41);
+            this.checkBoxItemCounts.Location = new System.Drawing.Point(804, 47);
+            this.checkBoxItemCounts.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.checkBoxItemCounts.Name = "checkBoxItemCounts";
-            this.checkBoxItemCounts.Size = new System.Drawing.Size(113, 19);
+            this.checkBoxItemCounts.Size = new System.Drawing.Size(132, 22);
             this.checkBoxItemCounts.TabIndex = 2;
             this.checkBoxItemCounts.Text = "Show Item &Counts";
             this.checkBoxItemCounts.UseVisualStyleBackColor = true;
             this.checkBoxItemCounts.CheckedChanged += new System.EventHandler(this.checkBoxItemCounts_CheckedChanged);
             // 
-            // salaryRenderer
-            // 
-            this.salaryRenderer.ImageName = "star";
-            this.salaryRenderer.MaximumValue = 500000;
-            this.salaryRenderer.MaxNumberImages = 5;
-            this.salaryRenderer.MinimumValue = 10000;
-            // 
             // TabDataSet
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.groupBox13);
             this.Controls.Add(this.label3);
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "TabDataSet";
-            this.Size = new System.Drawing.Size(811, 503);
+            this.Size = new System.Drawing.Size(946, 580);
             this.groupBox13.ResumeLayout(false);
             this.groupBox13.PerformLayout();
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

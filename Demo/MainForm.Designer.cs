@@ -80,7 +80,7 @@ namespace ObjectListViewDemo
             // toolStripStatusLabel3
             // 
             this.toolStripStatusLabel3.Name = "toolStripStatusLabel3";
-            this.toolStripStatusLabel3.Size = new System.Drawing.Size(829, 17);
+            this.toolStripStatusLabel3.Size = new System.Drawing.Size(968, 17);
             this.toolStripStatusLabel3.Spring = true;
             this.toolStripStatusLabel3.Text = "toolStripStatusLabel3";
             this.toolStripStatusLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -100,20 +100,22 @@ namespace ObjectListViewDemo
             this.tabControl1.Controls.Add(this.tabPagePrinting);
             this.tabControl1.Controls.Add(this.tabPageDragAndDrop);
             this.tabControl1.Controls.Add(this.tabDescribedTasks);
-            this.tabControl1.Location = new System.Drawing.Point(13, 12);
+            this.tabControl1.Location = new System.Drawing.Point(15, 14);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(819, 529);
+            this.tabControl1.Size = new System.Drawing.Size(955, 610);
             this.tabControl1.TabIndex = 8;
             this.tabControl1.Selected += new System.Windows.Forms.TabControlEventHandler(this.tabControl1_Selected);
             // 
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.tabSimple);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Location = new System.Drawing.Point(4, 24);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(811, 503);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.tabPage1.Size = new System.Drawing.Size(947, 582);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Simple Example";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -123,18 +125,20 @@ namespace ObjectListViewDemo
             this.tabSimple.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.tabSimple.Location = new System.Drawing.Point(5, 5);
+            this.tabSimple.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.tabSimple.Name = "tabSimple";
-            this.tabSimple.Location = new System.Drawing.Point(4, 4);
-            this.tabSimple.Size = new System.Drawing.Size(800, 500);
+            this.tabSimple.Size = new System.Drawing.Size(937, 577);
             this.tabSimple.TabIndex = 0;
             // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.tabComplex);
-            this.tabPage2.Location = new System.Drawing.Point(4,22);
+            this.tabPage2.Location = new System.Drawing.Point(4, 24);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(811, 503);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.tabPage2.Size = new System.Drawing.Size(947, 582);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Complex Example";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -144,18 +148,20 @@ namespace ObjectListViewDemo
             this.tabComplex.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tabComplex.Location = new System.Drawing.Point(4,4);
+            this.tabComplex.Location = new System.Drawing.Point(5, 5);
+            this.tabComplex.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.tabComplex.Name = "tabComplex";
-            this.tabComplex.Size = new System.Drawing.Size(800, 500);
+            this.tabComplex.Size = new System.Drawing.Size(933, 577);
             this.tabComplex.TabIndex = 0;
             // 
             // tabPage11
             // 
             this.tabPage11.Controls.Add(this.tabDataSet);
-            this.tabPage11.Location = new System.Drawing.Point(4, 22);
+            this.tabPage11.Location = new System.Drawing.Point(4, 24);
+            this.tabPage11.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tabPage11.Name = "tabPage11";
-            this.tabPage11.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage11.Size = new System.Drawing.Size(811, 503);
+            this.tabPage11.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.tabPage11.Size = new System.Drawing.Size(947, 582);
             this.tabPage11.TabIndex = 11;
             this.tabPage11.Text = "DataListView";
             this.tabPage11.UseVisualStyleBackColor = true;
@@ -165,18 +171,20 @@ namespace ObjectListViewDemo
             this.tabDataSet.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tabDataSet.Location = new System.Drawing.Point(4,4);
+            this.tabDataSet.Location = new System.Drawing.Point(5, 5);
+            this.tabDataSet.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.tabDataSet.Name = "tabDataSet";
-            this.tabDataSet.Size = new System.Drawing.Size(800, 500);
+            this.tabDataSet.Size = new System.Drawing.Size(933, 577);
             this.tabDataSet.TabIndex = 0;
             // 
             // tabPageFileExplorer
             // 
             this.tabPageFileExplorer.Controls.Add(this.tabFileExplorer1);
-            this.tabPageFileExplorer.Location = new System.Drawing.Point(4, 22);
+            this.tabPageFileExplorer.Location = new System.Drawing.Point(4, 24);
+            this.tabPageFileExplorer.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tabPageFileExplorer.Name = "tabPageFileExplorer";
-            this.tabPageFileExplorer.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageFileExplorer.Size = new System.Drawing.Size(811, 503);
+            this.tabPageFileExplorer.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.tabPageFileExplorer.Size = new System.Drawing.Size(947, 582);
             this.tabPageFileExplorer.TabIndex = 12;
             this.tabPageFileExplorer.Text = "File Explorer";
             this.tabPageFileExplorer.UseVisualStyleBackColor = true;
@@ -186,18 +194,20 @@ namespace ObjectListViewDemo
             this.tabFileExplorer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tabFileExplorer1.Location = new System.Drawing.Point(4, 4);
+            this.tabFileExplorer1.Location = new System.Drawing.Point(5, 5);
+            this.tabFileExplorer1.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.tabFileExplorer1.Name = "tabFileExplorer1";
-            this.tabFileExplorer1.Size = new System.Drawing.Size(800, 500);
+            this.tabFileExplorer1.Size = new System.Drawing.Size(933, 577);
             this.tabFileExplorer1.TabIndex = 0;
             // 
             // tabPageFastList
             // 
             this.tabPageFastList.Controls.Add(this.tabFastList1);
-            this.tabPageFastList.Location = new System.Drawing.Point(4, 22);
+            this.tabPageFastList.Location = new System.Drawing.Point(4, 24);
+            this.tabPageFastList.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tabPageFastList.Name = "tabPageFastList";
-            this.tabPageFastList.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageFastList.Size = new System.Drawing.Size(811, 503);
+            this.tabPageFastList.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.tabPageFastList.Size = new System.Drawing.Size(947, 582);
             this.tabPageFastList.TabIndex = 13;
             this.tabPageFastList.Text = "Fast List";
             this.tabPageFastList.UseVisualStyleBackColor = true;
@@ -207,18 +217,20 @@ namespace ObjectListViewDemo
             this.tabFastList1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tabFastList1.Location = new System.Drawing.Point(4, 4);
+            this.tabFastList1.Location = new System.Drawing.Point(5, 5);
+            this.tabFastList1.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.tabFastList1.Name = "tabFastList1";
-            this.tabFastList1.Size = new System.Drawing.Size(800, 500);
+            this.tabFastList1.Size = new System.Drawing.Size(933, 577);
             this.tabFastList1.TabIndex = 0;
             // 
             // tabPageTreeListView
             // 
             this.tabPageTreeListView.Controls.Add(this.tabTreeListView1);
-            this.tabPageTreeListView.Location = new System.Drawing.Point(4, 22);
+            this.tabPageTreeListView.Location = new System.Drawing.Point(4, 24);
+            this.tabPageTreeListView.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tabPageTreeListView.Name = "tabPageTreeListView";
-            this.tabPageTreeListView.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageTreeListView.Size = new System.Drawing.Size(811, 503);
+            this.tabPageTreeListView.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.tabPageTreeListView.Size = new System.Drawing.Size(947, 582);
             this.tabPageTreeListView.TabIndex = 14;
             this.tabPageTreeListView.Text = "TreeListView";
             this.tabPageTreeListView.UseVisualStyleBackColor = true;
@@ -228,18 +240,20 @@ namespace ObjectListViewDemo
             this.tabTreeListView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tabTreeListView1.Location = new System.Drawing.Point(4, 4);
+            this.tabTreeListView1.Location = new System.Drawing.Point(5, 5);
+            this.tabTreeListView1.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.tabTreeListView1.Name = "tabTreeListView1";
-            this.tabTreeListView1.Size = new System.Drawing.Size(800, 500);
+            this.tabTreeListView1.Size = new System.Drawing.Size(933, 577);
             this.tabTreeListView1.TabIndex = 0;
             // 
             // tabPageDataTreeListView
             // 
             this.tabPageDataTreeListView.Controls.Add(this.tabDataTreeListView1);
-            this.tabPageDataTreeListView.Location = new System.Drawing.Point(4, 22);
+            this.tabPageDataTreeListView.Location = new System.Drawing.Point(4, 24);
+            this.tabPageDataTreeListView.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tabPageDataTreeListView.Name = "tabPageDataTreeListView";
-            this.tabPageDataTreeListView.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageDataTreeListView.Size = new System.Drawing.Size(811, 503);
+            this.tabPageDataTreeListView.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.tabPageDataTreeListView.Size = new System.Drawing.Size(947, 582);
             this.tabPageDataTreeListView.TabIndex = 15;
             this.tabPageDataTreeListView.Text = "DataTreeListView";
             this.tabPageDataTreeListView.UseVisualStyleBackColor = true;
@@ -249,18 +263,20 @@ namespace ObjectListViewDemo
             this.tabDataTreeListView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tabDataTreeListView1.Location = new System.Drawing.Point(4,4);
+            this.tabDataTreeListView1.Location = new System.Drawing.Point(5, 5);
+            this.tabDataTreeListView1.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.tabDataTreeListView1.Name = "tabDataTreeListView1";
-            this.tabDataTreeListView1.Size = new System.Drawing.Size(800, 500);
+            this.tabDataTreeListView1.Size = new System.Drawing.Size(933, 577);
             this.tabDataTreeListView1.TabIndex = 0;
             // 
             // tabPagePrinting
             // 
             this.tabPagePrinting.Controls.Add(this.tabPrinting1);
-            this.tabPagePrinting.Location = new System.Drawing.Point(4, 22);
+            this.tabPagePrinting.Location = new System.Drawing.Point(4, 24);
+            this.tabPagePrinting.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tabPagePrinting.Name = "tabPagePrinting";
-            this.tabPagePrinting.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPagePrinting.Size = new System.Drawing.Size(811, 503);
+            this.tabPagePrinting.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.tabPagePrinting.Size = new System.Drawing.Size(947, 582);
             this.tabPagePrinting.TabIndex = 16;
             this.tabPagePrinting.Text = "Printing ListViews";
             this.tabPagePrinting.UseVisualStyleBackColor = true;
@@ -270,18 +286,20 @@ namespace ObjectListViewDemo
             this.tabPrinting1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tabPrinting1.Location = new System.Drawing.Point(4,4);
+            this.tabPrinting1.Location = new System.Drawing.Point(5, 5);
+            this.tabPrinting1.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.tabPrinting1.Name = "tabPrinting1";
-            this.tabPrinting1.Size = new System.Drawing.Size(800, 500);
+            this.tabPrinting1.Size = new System.Drawing.Size(933, 577);
             this.tabPrinting1.TabIndex = 0;
             // 
             // tabPageDragAndDrop
             // 
             this.tabPageDragAndDrop.Controls.Add(this.tabDragAndDrop1);
-            this.tabPageDragAndDrop.Location = new System.Drawing.Point(4, 22);
+            this.tabPageDragAndDrop.Location = new System.Drawing.Point(4, 24);
+            this.tabPageDragAndDrop.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tabPageDragAndDrop.Name = "tabPageDragAndDrop";
-            this.tabPageDragAndDrop.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageDragAndDrop.Size = new System.Drawing.Size(811, 503);
+            this.tabPageDragAndDrop.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.tabPageDragAndDrop.Size = new System.Drawing.Size(947, 582);
             this.tabPageDragAndDrop.TabIndex = 17;
             this.tabPageDragAndDrop.Text = "Drag and drop";
             this.tabPageDragAndDrop.UseVisualStyleBackColor = true;
@@ -291,18 +309,20 @@ namespace ObjectListViewDemo
             this.tabDragAndDrop1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tabDragAndDrop1.Location = new System.Drawing.Point(4,4);
+            this.tabDragAndDrop1.Location = new System.Drawing.Point(5, 5);
+            this.tabDragAndDrop1.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.tabDragAndDrop1.Name = "tabDragAndDrop1";
-            this.tabDragAndDrop1.Size = new System.Drawing.Size(800, 500);
+            this.tabDragAndDrop1.Size = new System.Drawing.Size(933, 577);
             this.tabDragAndDrop1.TabIndex = 0;
             // 
             // tabDescribedTasks
             // 
             this.tabDescribedTasks.Controls.Add(this.tabDescribedTask1);
-            this.tabDescribedTasks.Location = new System.Drawing.Point(4, 22);
+            this.tabDescribedTasks.Location = new System.Drawing.Point(4, 24);
+            this.tabDescribedTasks.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tabDescribedTasks.Name = "tabDescribedTasks";
-            this.tabDescribedTasks.Padding = new System.Windows.Forms.Padding(3);
-            this.tabDescribedTasks.Size = new System.Drawing.Size(811, 503);
+            this.tabDescribedTasks.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.tabDescribedTasks.Size = new System.Drawing.Size(947, 582);
             this.tabDescribedTasks.TabIndex = 18;
             this.tabDescribedTasks.Text = "Pretty Tasks";
             this.tabDescribedTasks.UseVisualStyleBackColor = true;
@@ -312,9 +332,10 @@ namespace ObjectListViewDemo
             this.tabDescribedTask1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tabDescribedTask1.Location = new System.Drawing.Point(4,4);
+            this.tabDescribedTask1.Location = new System.Drawing.Point(5, 5);
+            this.tabDescribedTask1.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.tabDescribedTask1.Name = "tabDescribedTask1";
-            this.tabDescribedTask1.Size = new System.Drawing.Size(800, 500);
+            this.tabDescribedTask1.Size = new System.Drawing.Size(933, 577);
             this.tabDescribedTask1.TabIndex = 0;
             // 
             // tabPage7
@@ -329,19 +350,21 @@ namespace ObjectListViewDemo
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1,
             this.toolStripStatusLabel3});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 544);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 631);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(844, 22);
+            this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 16, 0);
+            this.statusStrip1.Size = new System.Drawing.Size(985, 22);
             this.statusStrip1.TabIndex = 3;
             this.statusStrip1.Text = "statusStrip1";
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(844, 566);
+            this.ClientSize = new System.Drawing.Size(985, 653);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.tabControl1);
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "MainForm";
             this.Text = "ObjectListView Demo";
             this.tabControl1.ResumeLayout(false);

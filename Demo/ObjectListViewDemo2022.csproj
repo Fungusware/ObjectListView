@@ -57,9 +57,6 @@
     <Optimize>false</Optimize>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System.Design" />
-  </ItemGroup>
-  <ItemGroup>
     <Compile Update="BusinessCardRenderer.cs">
       <SubType>Component</SubType>
     </Compile>

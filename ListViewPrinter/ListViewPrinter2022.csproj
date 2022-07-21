@@ -24,9 +24,6 @@
     <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System.Design" />
-  </ItemGroup>
-  <ItemGroup>
     <Compile Update="ListViewPrinter.cs">
       <SubType>Component</SubType>
     </Compile>
