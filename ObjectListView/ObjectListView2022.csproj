@@ -13,6 +13,15 @@
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <UseWindowsForms>true</UseWindowsForms>
     <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageId>$(AssemblyName).Fungusware</PackageId>
+    <Title>ObjectListView is a .NET 6 ListView wired on caffeine, guarana and steroids.</Title>
+    <Company>Bright Ideas Software</Company>
+    <Authors>Bright Ideas Software,Fungusware</Authors>
+    <Product>$(AssemblyName).Fungusware</Product>
+    <Description>ObjectListView is a .NET 6 ListView wired on caffeine, guarana and steroids.</Description>
+    <Copyright>Bright Ideas Software</Copyright>
+    <Version>2.9.3</Version>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <WarningLevel>1</WarningLevel>
