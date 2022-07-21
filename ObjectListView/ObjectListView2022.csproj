@@ -1,0 +1,88 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <OutputType>Library</OutputType>
+    <RootNamespace>BrightIdeasSoftware</RootNamespace>
+    <AssemblyName>ObjectListView</AssemblyName>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>olv-keyfile.snk</AssemblyOriginatorKeyFile>
+    <SccProjectName>%24/ObjectListView/trunk/ObjectListView</SccProjectName>
+    <SccLocalPath>.</SccLocalPath>
+    <SccAuxPath>https://grammarian.visualstudio.com/defaultcollection</SccAuxPath>
+    <SccProvider>{4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}</SccProvider>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <WarningLevel>1</WarningLevel>
+    <DocumentationFile>bin\Debug\ObjectListView.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DocumentationFile>bin\Release\ObjectListView.XML</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="System.Design" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="DataTreeListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="Implementation\Enums.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="OLVColumn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DataListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="Implementation\Events.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="FastDataListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="FastObjectListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="Rendering\TreeRenderer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="SubControls\ToolStripCheckedListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="ObjectListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="Rendering\Renderers.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="Rendering\Styles.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="TreeListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="VirtualObjectListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="ObjectListView2015.nuspec">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Implementation\DragSource.cs" />
+    <Compile Remove="Implementation\DropSink.cs" />
+    <Compile Remove="SubControls\FastListView.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers" Version="0.4.336902">
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Windows.Compatibility" Version="6.0.0" />
+  </ItemGroup>
+</Project>

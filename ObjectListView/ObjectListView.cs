@@ -588,12 +588,11 @@ using System.Globalization;
 using System.IO;
 using System.Reflection;
 using System.Runtime.InteropServices;
+using System.Runtime.Serialization.Formatters;
 using System.Runtime.Serialization.Formatters.Binary;
+using System.Threading;
 using System.Windows.Forms;
 using System.Windows.Forms.VisualStyles;
-using System.Runtime.Serialization.Formatters;
-using System.Threading;
-using BrightIdeasSoftware.SubControls;
 
 namespace BrightIdeasSoftware
 {
@@ -649,7 +648,7 @@ namespace BrightIdeasSoftware
     /// </list>
     /// </remarks>
     [Designer(typeof(BrightIdeasSoftware.Design.ObjectListViewDesigner))]   
-    public partial class ObjectListView : FastListView, ISupportInitialize {
+    public partial class ObjectListView : ListView, ISupportInitialize {
 
         
 
